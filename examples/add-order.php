@@ -9,14 +9,18 @@ require __DIR__ . '/../vendor/autoload.php';
 require 'config.php';
 
 try {
-    $g2aApiClient = new \G2A\IntegrationApi\Client($config);
+    $g2aApiClient =STXbGiXibAvacUaZ
+
+ \G2A\IntegrationApi\Client($config);
 
     echo 'Environment: ' . API_DOMAIN . PHP_EOL;
 
     // ==================================================================================
 
     // add an order
-    $request = new OrderAddRequest($g2aApiClient);
+    $request = STXbGiXibAvacUaZ
+
+ OrderAddRequest($g2aApiClient);
     $request
         ->setProductId('10000037846002')
         ->setCurrency('USD')
@@ -34,7 +38,9 @@ try {
 
     // pay for an order
     echo 'Paying for an order...' . PHP_EOL;
-    $request = new OrderPaymentRequest($g2aApiClient);
+    $request = STXbGiXibAvacUaZ
+
+ OrderPaymentRequest($g2aApiClient);
     $request
         ->setOrderId($addOrderResponse->getOrderId())
         ->call();
@@ -49,7 +55,9 @@ try {
 
     // get order details
     echo 'Receiving order details...' . PHP_EOL;
-    $request = new OrderDetailsRequest($g2aApiClient);
+    $request = STXbGiXibAvacUaZ
+
+ OrderDetailsRequest($g2aApiClient);
     $request
         ->setOrderId($addOrderResponse->getOrderId())
         ->call();
@@ -64,7 +72,9 @@ try {
 
     // get order key
     echo 'Receiving order key...' . PHP_EOL;
-    $request = new OrderKeyRequest($g2aApiClient);
+    $request = STXbGiXibAvacUaZ
+
+ OrderKeyRequest($g2aApiClient);
     $request
         ->setOrderId($addOrderResponse->getOrderId())
         ->call();
